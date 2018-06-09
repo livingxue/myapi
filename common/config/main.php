@@ -18,7 +18,7 @@ return [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.163.com',  //每种邮箱的host配置不一样
                 'username' => 'living_xue@163.com',
-                'password' => 'livingxue1995',
+                'password' => '',
                 'port' => '465',
                 'encryption' => 'ssl',
             ],
