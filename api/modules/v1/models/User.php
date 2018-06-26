@@ -8,14 +8,17 @@ use Yii;
  * This is the model class for table "pre_user".
  *
  * @property integer $id
- * @property string $email
+ * @property string $nickname
  * @property string $name
  * @property string $password
  * @property integer $created_at
- * @property string $updated_at
+ * @property integer $updated_at
+ * @property integer $status
  */
 class User extends \yii\db\ActiveRecord
 {
+	const STATUS_NOTCHECK = -1;
+	const STATUS_NORMAL = 0;
     /**
      * @inheritdoc
      */
@@ -30,9 +33,9 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['email','password', 'created_at','updated_at'], 'required'],
-            [['created_at', 'updated_at'], 'integer'],
-            [['email', 'name','password'], 'string', 'max' => 128],
+            [['nickname','password', 'created_at','updated_at'], 'required'],
+            [['created_at', 'updated_at','status'], 'integer'],
+            [['nickname', 'name','password'], 'string', 'max' => 128],
         ];
     }
 
@@ -45,9 +48,14 @@ class User extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => '用户名',
             'password' => '密码',
-            'email' => '邮箱',
+            'nickname' => '昵称',
             'created_at' => '创建时间',
             'updated_at' => '修改时间'
         ];
+    }
+    
+    public function checkname($name)
+    {
+    	return User::find()->where(['name'=>$name])->count() > 0;
     }
 }

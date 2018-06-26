@@ -13,12 +13,12 @@ return [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'useFileTransport' =>true, //这句一定有，false发送邮件，true只是生成邮件在runtime文件夹下，不发邮件
+            'useFileTransport' =>false, //这句一定有，false发送邮件，true只是生成邮件在runtime文件夹下，不发邮件
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.163.com',  //每种邮箱的host配置不一样
                 'username' => 'living_xue@163.com',
-                'password' => '',
+                'password' => 'livingxue1995',
                 'port' => '465',
                 'encryption' => 'ssl',
             ],

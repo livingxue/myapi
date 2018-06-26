@@ -1,0 +1,653 @@
+2018-06-26 01:50:12 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: E:/www/myapi/api/web/assets' 
+
+in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 E:\www\myapi\vendor\yiisoft\yii2\base\Component.php(133): yii\web\View->getAssetManager()
+#10 E:\www\myapi\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#11 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#12 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#13 E:\www\myapi\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#14 E:\www\myapi\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#15 [internal function]: yii\log\Logger->flush(true)
+#16 {main}
+2018-06-26 01:50:11 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'fvs9c2qi4odmflceb1fn86rct8'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd0317d3e-ba51-492d-8eb2-9af1a8949c35'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.1.5'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => 'PHPSESSID=fvs9c2qi4odmflceb1fn86rct8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '55435'
+    'REDIRECT_URL' => '/myapi/api/web/v1/user/send'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/v1/user/send'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/v1/user/send'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\v1\\user\\send\\user\\send'
+    'PHP_SELF' => '/myapi/api/web/index.php/v1/user/send'
+    'REQUEST_TIME_FLOAT' => 1529977811.61
+    'REQUEST_TIME' => 1529977811
+]
+2018-06-26 01:51:24 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: E:/www/myapi/api/web/assets' 
+
+in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 E:\www\myapi\vendor\yiisoft\yii2\base\Component.php(133): yii\web\View->getAssetManager()
+#10 E:\www\myapi\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#11 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#12 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#13 E:\www\myapi\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#14 E:\www\myapi\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#15 [internal function]: yii\log\Logger->flush(true)
+#16 {main}
+2018-06-26 01:51:24 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'fvs9c2qi4odmflceb1fn86rct8'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '173c9f83-6c67-4ace-b4fb-780d5a17a3dc'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.1.5'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => 'PHPSESSID=fvs9c2qi4odmflceb1fn86rct8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '55473'
+    'REDIRECT_URL' => '/myapi/api/web/v1/user/send'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/v1/user/send'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/v1/user/send'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\v1\\user\\send\\user\\send'
+    'PHP_SELF' => '/myapi/api/web/index.php/v1/user/send'
+    'REQUEST_TIME_FLOAT' => 1529977884.652
+    'REQUEST_TIME' => 1529977884
+]
+2018-06-26 01:56:27 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: E:/www/myapi/api/web/assets' 
+
+in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 E:\www\myapi\vendor\yiisoft\yii2\base\Component.php(133): yii\web\View->getAssetManager()
+#10 E:\www\myapi\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#11 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#12 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#13 E:\www\myapi\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#14 E:\www\myapi\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#15 [internal function]: yii\log\Logger->flush(true)
+#16 {main}
+2018-06-26 01:56:26 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'fvs9c2qi4odmflceb1fn86rct8'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '2ca6fa6c-84a0-4533-a35e-3c2d25bce0b4'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.1.5'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => 'PHPSESSID=fvs9c2qi4odmflceb1fn86rct8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '55807'
+    'REDIRECT_URL' => '/myapi/api/web/v1/user/send'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/v1/user/send'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/v1/user/send'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\v1\\user\\send\\user\\send'
+    'PHP_SELF' => '/myapi/api/web/index.php/v1/user/send'
+    'REQUEST_TIME_FLOAT' => 1529978186.008
+    'REQUEST_TIME' => 1529978186
+]
+2018-06-26 02:01:13 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in E:\www\myapi\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#1 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\www\myapi\api\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: é¡µé¢æœªæ‰¾åˆ°ã€‚ in E:\www\myapi\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\www\myapi\api\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2018-06-26 02:01:13 [::1][-][-][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1510385686730'
+    'PHPSESSID' => '7kklnl3jjgjoi20ktfcql2rsb1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/myapi/api/'
+    'HTTP_COOKIE' => 'bdshare_firstime=1510385686730; PHPSESSID=7kklnl3jjgjoi20ktfcql2rsb1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '56068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PHP_SELF' => '/myapi/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529978473.513
+    'REQUEST_TIME' => 1529978473
+]
+2018-06-26 02:01:13 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: E:/www/myapi/api/web/assets' 
+
+in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 E:\www\myapi\vendor\yiisoft\yii2\base\Component.php(133): yii\web\View->getAssetManager()
+#10 E:\www\myapi\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#11 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#12 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#13 E:\www\myapi\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#14 E:\www\myapi\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#15 [internal function]: yii\log\Logger->flush(true)
+#16 {main}
+2018-06-26 02:01:13 [::1][-][-][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1510385686730'
+    'PHPSESSID' => '7kklnl3jjgjoi20ktfcql2rsb1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/myapi/api/'
+    'HTTP_COOKIE' => 'bdshare_firstime=1510385686730; PHPSESSID=7kklnl3jjgjoi20ktfcql2rsb1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '56068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PHP_SELF' => '/myapi/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529978473.513
+    'REQUEST_TIME' => 1529978473
+]
+2018-06-26 02:01:16 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: E:/www/myapi/api/web/assets in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2-gii\Module.php(134): yii\di\ServiceLocator->__get('assetManager')
+#9 E:\www\myapi\vendor\yiisoft\yii2-gii\Module.php(123): yii\gii\Module->resetGlobalSettings()
+#10 E:\www\myapi\vendor\yiisoft\yii2\base\Controller.php(145): yii\gii\Module->beforeAction(Object(yii\base\InlineAction))
+#11 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#12 E:\www\myapi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/ind...', Array)
+#13 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\www\myapi\api\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2018-06-26 02:01:16 [::1][-][-][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1510385686730'
+    'PHPSESSID' => '7kklnl3jjgjoi20ktfcql2rsb1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'bdshare_firstime=1510385686730; PHPSESSID=7kklnl3jjgjoi20ktfcql2rsb1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '56069'
+    'REDIRECT_URL' => '/myapi/api/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/gii'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\gii'
+    'PHP_SELF' => '/myapi/api/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1529978476.178
+    'REQUEST_TIME' => 1529978476
+]
+2018-06-26 02:01:16 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: E:/www/myapi/api/web/assets' 
+
+in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 E:\www\myapi\vendor\yiisoft\yii2\base\Component.php(133): yii\web\View->getAssetManager()
+#10 E:\www\myapi\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#11 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#12 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#13 E:\www\myapi\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#14 E:\www\myapi\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#15 E:\www\myapi\vendor\yiisoft\yii2\base\ErrorHandler.php(113): yii\log\Logger->flush(true)
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#17 {main}
+2018-06-26 02:01:16 [::1][-][-][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1510385686730'
+    'PHPSESSID' => '7kklnl3jjgjoi20ktfcql2rsb1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'bdshare_firstime=1510385686730; PHPSESSID=7kklnl3jjgjoi20ktfcql2rsb1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '56069'
+    'REDIRECT_URL' => '/myapi/api/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/gii'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\gii'
+    'PHP_SELF' => '/myapi/api/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1529978476.178
+    'REQUEST_TIME' => 1529978476
+]
+2018-06-26 02:02:21 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: yii\web\Request::cookieValidationKey must be configured with a secret key. in E:\www\myapi\vendor\yiisoft\yii2\web\Request.php:1537
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\web\Request.php(1519): yii\web\Request->loadCookies()
+#1 E:\www\myapi\vendor\yiisoft\yii2\web\Request.php(1602): yii\web\Request->getCookies()
+#2 E:\www\myapi\vendor\yiisoft\yii2\web\Request.php(1585): yii\web\Request->loadCsrfToken()
+#3 E:\www\myapi\vendor\yiisoft\yii2\helpers\BaseHtml.php(305): yii\web\Request->getCsrfToken()
+#4 E:\www\myapi\vendor\yiisoft\yii2-gii\views\layouts\main.php(17): yii\helpers\BaseHtml::csrfMetaTags()
+#5 E:\www\myapi\vendor\yiisoft\yii2\base\View.php(332): require('E:\\www\\myapi\\ve...')
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('E:\\www\\myapi\\ve...', Array)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('E:\\www\\myapi\\ve...', Array, Object(yii\gii\controllers\DefaultController))
+#8 E:\www\myapi\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="def...')
+#9 E:\www\myapi\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(35): yii\base\Controller->render('index')
+#10 [internal function]: yii\gii\controllers\DefaultController->actionIndex()
+#11 E:\www\myapi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 E:\www\myapi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 E:\www\myapi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/ind...', Array)
+#15 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 E:\www\myapi\api\web\index.php(19): yii\base\Application->run()
+#17 {main}
+2018-06-26 02:02:20 [::1][-][-][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1510385686730'
+    'PHPSESSID' => '7kklnl3jjgjoi20ktfcql2rsb1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'bdshare_firstime=1510385686730; PHPSESSID=7kklnl3jjgjoi20ktfcql2rsb1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '56091'
+    'REDIRECT_URL' => '/myapi/api/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/gii'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\gii'
+    'PHP_SELF' => '/myapi/api/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1529978540.481
+    'REQUEST_TIME' => 1529978540
+]
+2018-06-26 03:42:00 [::1][-][-][error][yii\redis\Connection] Failed to open redis DB connection (111.231.117.218:6379, database=0): 10061 - ÓÉÓÚÄ¿±ê¼ÆËã»ú»ı¼«¾Ü¾ø£¬ÎŞ·¨Á¬½Ó¡£
+
+    in E:\www\myapi\api\modules\v1\controllers\UserController.php:17
+2018-06-26 03:42:00 [::1][-][-][error][yii\db\Exception] yii\db\Exception: Failed to open redis DB connection (111.231.117.218:6379, database=0): 10061 - ÓÉÓÚÄ¿±ê¼ÆËã»ú»ı¼«¾Ü¾ø£¬ÎŞ·¨Á¬½Ó¡£
+ in E:\www\myapi\vendor\yiisoft\yii2-redis\Connection.php:545
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2-redis\Connection.php(641): yii\redis\Connection->open()
+#1 E:\www\myapi\vendor\yiisoft\yii2-redis\Connection.php(606): yii\redis\Connection->executeCommand('SET', Array)
+#2 E:\www\myapi\api\modules\v1\controllers\UserController.php(17): yii\redis\Connection->__call('set', Array)
+#3 [internal function]: api\modules\v1\controllers\UserController->actionTest1()
+#4 E:\www\myapi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('test1', Array)
+#7 E:\www\myapi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/user/test1', Array)
+#8 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\www\myapi\api\web\index.php(19): yii\base\Application->run()
+#10 {main}
+Additional Information:
+ÓÉÓÚÄ¿±ê¼ÆËã»ú»ı¼«¾Ü¾ø£¬ÎŞ·¨Á¬½Ó¡£
+
+2018-06-26 03:41:59 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'fvs9c2qi4odmflceb1fn86rct8'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '4b74a57d-d6fc-419a-982d-a7164d9a0d78'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.1.5'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => 'PHPSESSID=fvs9c2qi4odmflceb1fn86rct8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '58358'
+    'REDIRECT_URL' => '/myapi/api/web/v1/user/test1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/v1/user/test1'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/v1/user/test1'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\v1\\user\\test1\\user\\test1'
+    'PHP_SELF' => '/myapi/api/web/index.php/v1/user/test1'
+    'REQUEST_TIME_FLOAT' => 1529984519.749
+    'REQUEST_TIME' => 1529984519
+]
+2018-06-26 03:42:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: E:/www/myapi/api/web/assets' 
+
+in E:\www\myapi\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 E:\www\myapi\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 E:\www\myapi\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 E:\www\myapi\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 E:\www\myapi\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 E:\www\myapi\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('assetManager', true)
+#7 E:\www\myapi\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 E:\www\myapi\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 E:\www\myapi\vendor\yiisoft\yii2\base\Component.php(133): yii\web\View->getAssetManager()
+#10 E:\www\myapi\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#11 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(54): yii\debug\panels\AssetPanel->save()
+#12 E:\www\myapi\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#13 E:\www\myapi\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#14 E:\www\myapi\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#15 E:\www\myapi\vendor\yiisoft\yii2\base\ErrorHandler.php(113): yii\log\Logger->flush(true)
+#16 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#17 {main}
+2018-06-26 03:41:59 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'fvs9c2qi4odmflceb1fn86rct8'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '4b74a57d-d6fc-419a-982d-a7164d9a0d78'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.1.5'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => 'PHPSESSID=fvs9c2qi4odmflceb1fn86rct8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Server\\mysql\\bin;E:\\PHP\\PHP;C:\\composer;E:\\Git\\cmd;E:\\node\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/www/myapi/api/web/index.php'
+    'REMOTE_PORT' => '58358'
+    'REDIRECT_URL' => '/myapi/api/web/v1/user/test1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myapi/api/web/v1/user/test1'
+    'SCRIPT_NAME' => '/myapi/api/web/index.php'
+    'PATH_INFO' => '/v1/user/test1'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\v1\\user\\test1\\user\\test1'
+    'PHP_SELF' => '/myapi/api/web/index.php/v1/user/test1'
+    'REQUEST_TIME_FLOAT' => 1529984519.749
+    'REQUEST_TIME' => 1529984519
+]

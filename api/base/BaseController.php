@@ -28,6 +28,10 @@ class BaseController extends Controller {
 		header ( 'Access-Control-Allow-Origin:*' );
 		header ( 'Access-Control-Allow-Methods:POST' );
 		header ( 'Access-Control-Allow-Headers:x-requested-with,content-type' );
+		
+		
+		return true;
+		
 		// 判断当前的控制对应的方法需不需要登录验证
 		if (in_array ( $this->id . '/' . $this->action->id, $this->no_need_login ) || in_array ( $this->id . '/*', $this->no_need_login )) {
 			// 如果不需要登录验证,就直接返回
@@ -37,9 +41,6 @@ class BaseController extends Controller {
 		}
 		return true;
 	}
-
-
-
 
 	/**
 	 * api返回的json
@@ -64,10 +65,6 @@ class BaseController extends Controller {
 	}
 	protected function jsonFail($data = [], $message = '', $code = 1, $share = array()) {
 		$message = $message ? $message : '调用失败';
-		$this->jsonEncode ( false, $data, $message, $code, $share );
-	}
-	protected function LoginFail($data = [], $message = '', $code = 2, $share = array()) {
-		$message = $message ? $message : '未登录/登陆失效';
 		$this->jsonEncode ( false, $data, $message, $code, $share );
 	}
 	protected function jsonEncode($status, $data = [], $message = '', $code = 0) {

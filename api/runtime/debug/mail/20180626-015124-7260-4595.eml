@@ -1,0 +1,23 @@
+Message-ID: <7c07cb24ece64941a0b9e4f0cc01458d@localhost>
+Date: Tue, 26 Jun 2018 01:51:24 +0000
+Subject: Message subject
+From: living_xue@163.com
+To: 651693225@qq.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1529977884_1eca9ee186da19894c22c8ead879f1c1_=_"
+
+
+--_=_swift_v4_1529977884_1eca9ee186da19894c22c8ead879f1c1_=_
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Plain text content
+
+--_=_swift_v4_1529977884_1eca9ee186da19894c22c8ead879f1c1_=_
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<b>HTML content</b>
+
+--_=_swift_v4_1529977884_1eca9ee186da19894c22c8ead879f1c1_=_--
