@@ -18,6 +18,12 @@ use Yii;
  */
 class TodoList extends \yii\db\ActiveRecord
 {
+	const STATUS_DEL = -1;
+	
+	const STATUS_NOTSTAR = 0;//未开始
+	const STATUS_ONDO = 1;//进行中
+	const STATUS_DONE = 2;//已完成
+	
     /**
      * @inheritdoc
      */

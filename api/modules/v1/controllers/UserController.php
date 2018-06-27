@@ -11,20 +11,6 @@ use api\modules\v1\service\UserService;
 
 class UserController extends BaseController
 {
-	public function actionTest1()
-	{
-		$redis = Yii::$app->redis;
-		$redis->set('test','123');
-		$redis->expire('test',15);
-		return true;
-	}
-	public function actionTest2()
-	{
-		$redis = Yii::$app->redis;
-		
-		return $redis->get('test');
-	}
-	
 	public function acitonJoin()
 	{
 		$email = Yii::$app->request->post('email');
@@ -43,5 +29,16 @@ class UserController extends BaseController
 		$code = Yii::$app->request->get('code');
 		$uid = Yii::$app->request->post('uid');
 		
+	}
+	public function actionLogin()
+	{
+		$name = Yii::$app->request->post('name');
+		$password = Yii::$app->request->post('password');
+		$access_token = UserService::login($name, $password);
+		if(!empty($access_token)){
+			return $this->jsonSuccess($access_token,'登陆成功');
+		}else{
+			return $this->jsonFail('','登陆失败');
+		}
 	}
 }

@@ -6,20 +6,6 @@
 namespace api\modules\v1\service;
 
 use Yii;
-use backend\modules\restaurant\models\Food;
-use backend\modules\restaurant\models\FoodSKU;
-use backend\modules\restaurant\models\FoodOrder;
-use backend\modules\restaurant\models\OrderFood;
-use backend\modules\restaurant\models\FoodProperty;
-use backend\modules\restaurant\models\FoodPropertychild;
-use backend\modules\restaurant\models\PrintTemplate;
-use backend\modules\admin\models\Site;
-use backend\modules\admin\models\Admin;
-use common\extensions\ylyprint;
-use backend\modules\restaurant\models\Prints;
-use backend\modules\restaurant\models\OrderFoodAction;
-use common\extensions\printcenter;
-use backend\modules\restaurant\models\FoodOrderRefund;
 use api\modules\v1\models\Email;
 use api\modules\v1\models\JoinCode;
 use api\modules\v1\models\User;
@@ -90,7 +76,11 @@ class UserService
 	{
 		$user = User::find()->select('password')->where(['name'=>$name])->andWhere(['>','status',User::STATUS_NORMAL])->asArray()->one();
 		if(Yii::$app->security->validatePassword($password,$user['password'])){
-			return true;
+			$access_token = Yii::$app->security->generateRandomString ();
+			$redis = Yii::$app->redis;
+			$redis->set($access_token,$user->id);
+			$redis->expire($access_token,3600);
+			return $access_token;
 		}else{
 			return false;
 		}

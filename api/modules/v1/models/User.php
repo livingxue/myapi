@@ -14,6 +14,7 @@ use Yii;
  * @property integer $created_at
  * @property integer $updated_at
  * @property integer $status
+ * @property integer $todovip
  */
 class User extends \yii\db\ActiveRecord
 {
@@ -34,7 +35,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['nickname','password', 'created_at','updated_at'], 'required'],
-            [['created_at', 'updated_at','status'], 'integer'],
+            [['created_at', 'updated_at','status','todovip'], 'integer'],
             [['nickname', 'name','password'], 'string', 'max' => 128],
         ];
     }

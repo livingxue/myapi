@@ -34,9 +34,8 @@ class BaseController extends Controller {
 		
 		// 判断当前的控制对应的方法需不需要登录验证
 		if (in_array ( $this->id . '/' . $this->action->id, $this->no_need_login ) || in_array ( $this->id . '/*', $this->no_need_login )) {
-			// 如果不需要登录验证,就直接返回
 			return true;
-		}elseif (!$this->isLoggedIn()) {
+		}elseif (empty($this->checkLogin(Yii::$app->request->get('access_token')))) {
 			return $this->jsonFail ( '', '登陆失败', 2 );
 		}
 		return true;
@@ -141,6 +140,22 @@ class BaseController extends Controller {
 				'total_page' => ( int ) $page_info->defaultPageSize 
 		);
 		return $my_page_info;
+	}
+	
+	protected function checkLogin($access_token)
+	{
+		$redis = Yii::$app->redis;
+		$uid = $redis->get($access_token);
+		if(empty($uid)){
+			return false;
+		}
+		$redis->expire($access_token,3600);
+		return $uid;
+	}
+	protected function getUser()
+	{
+		$access_token = Yii::$app->request->get('access_token');
+		return $this->checkLogin($access_token);
 	}
 }
 
