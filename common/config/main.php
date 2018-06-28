@@ -27,12 +27,6 @@ return [
                 'from'=>['living_xue@163.com'=>'admin']
             ],
         ],
-    	'request' => [
-    			'parsers' => [
-    					'application/json' => 'yii\web\JsonParser',
-    					'text/json' => 'yii\web\JsonParser',
-    			],
-    	],
         'assetManager' => [
             'bundles' => [
                 'yii\web\JqueryAsset' => [

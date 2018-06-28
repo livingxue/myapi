@@ -33,6 +33,12 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+    	'request' => [
+    		'parsers' => [
+    				'application/json' => 'yii\web\JsonParser',
+    				'text/json' => 'yii\web\JsonParser',
+    			],
+    	],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
