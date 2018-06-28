@@ -34,7 +34,7 @@ class SendMailJob2 extends BaseObject implements RetryableJobInterface {
 		] )->asArray ()->all ();
 		
 		if (empty ( $todolist )) {
-			return true;//今日无事 直接退出队列
+			$str .= '今日事！今日毕！';
 		} else {
 			$str = '今日待办事项:' . PHP_EOL;
 			foreach ( $todolist as $i => $todo ) {
